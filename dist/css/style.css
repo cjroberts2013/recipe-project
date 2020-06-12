@@ -72,3 +72,37 @@
   .results__link:hover {
     transform: translateY(-5px);
     background-color: rgb(177, 204, 195);
+  }
+
+    .loader {
+      margin: 5rem auto;
+      text-align: center; 
+    }
+      
+    .loader svg {
+        height: 5.5rem;
+        width: 5.5rem;
+        fill: #042940;
+        transform-origin: 44% 50%;
+        animation: rotate 1.5s infinite linear; }
+    
+    @keyframes rotate {
+      0% {
+        transform: rotate(0); }
+      100% {
+        transform: rotate(360deg); 
+      } }
+
+  .results__pages {
+    height: 50px;
+    width: 90%;
+    margin: auto;
+  }
+
+  .results__btn--prev {
+    float: left;
+  }
+
+  .results__btn--next {
+    float: right;
+  }
