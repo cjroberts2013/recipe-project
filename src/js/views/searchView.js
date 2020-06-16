@@ -33,7 +33,7 @@ const renderRecipe = recipe => {
         <img class="card-img-top" src="${recipe.image_url}" alt="${recipe.title}">
         <div class="card-body">
             <h5 class="card-title text-center">${limitRecipeTitle(recipe.title)}</h5>
-            <a href="#" class="btn btn-outline-dark btn-block">Check Recipe</a>
+            <a href="#${recipe.recipe_id}" class="btn btn-outline-dark btn-block">Check Recipe</a>
         </div>
     </li>
     `;

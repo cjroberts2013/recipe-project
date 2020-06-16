@@ -19,6 +19,7 @@ export default class Recipe {
         }
     }
 
+    // POSSIBLY REMOVE
     calcTime() {
         // Assuming that 15 minutes of time is needed for every 3 ingredients
         const numIng = this.ingredients.length;
@@ -26,6 +27,7 @@ export default class Recipe {
         this.time = periods * 15
     }
 
+    // POSSIBLY REMOVE
     calcServings() {
         this.servings = 4;
     }
