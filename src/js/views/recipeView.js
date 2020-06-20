@@ -59,7 +59,7 @@ export const renderRecipe = (recipe, isLiked) => {
                 <span class="recipe__by">${recipe.author}</span>. Please check out directions at their website.
             </p>
             <a class="btn-small recipe__btn" href="${recipe.url}" target="_blank">
-                <button class='btn btn-outline-dark btn-block'>Cooking Directions</button>
+                <button class='cookingDir btn btn-outline-dark btn-block'>Cooking Directions</button>
             </a>
         </div>
     `;
