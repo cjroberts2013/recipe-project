@@ -29,12 +29,12 @@ const limitRecipeTitle = (title, limit = 17) => {
 
 const renderRecipe = recipe => {
     const markup = `
-    <li class="card results__link my-2 shadow" style="width: 90%;">
-        <img class="card-img-top" src="${recipe.image_url}" alt="${recipe.title}">
+    <li class="card results__link my-2 shadow">
         <div class="card-body">
             <h5 class="card-title text-center">${recipe.title}</h5>
             <a href="#${recipe.recipe_id}" class="btn btn-outline-dark btn-block">Check Recipe</a>
         </div>
+        <img class="card-img-top" src="${recipe.image_url}" alt="${recipe.title}">
     </li>
     `;
     elements.searchResList.insertAdjacentHTML('beforeend', markup);

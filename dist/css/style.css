@@ -36,7 +36,7 @@
   main {
     display: flex;
     justify-content: center;
-    min-height: 30rem;
+    min-height: 85vh;
   }
 
   .results {
@@ -54,7 +54,7 @@
 
   .recipe {
     width: 90%;
-    margin: 5%;
+    margin: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,9 +67,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 30px;
   }
 
   .results__link {
+    width: 90%;
     border: none;
     box-shadow: 2px 2px 12px rgba(0,0,0,.3);
   }
@@ -133,6 +135,7 @@
     align-self: center;
     box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
     border-radius: 5px;
+    margin-top: .5rem;
   }
 
   .recipe__fig {
@@ -143,3 +146,75 @@
   a {
     text-decoration: none !important
   } 
+  .card-body {
+    background-color: #fff;
+    border-radius: 5px;
+  }
+
+
+  @media(max-width: 1000px) {
+    .contain {
+      margin: 0;
+      max-width: 100%
+      }
+    
+    main {
+      flex-direction: column;
+      justify-content: stretch;
+    }
+
+    .form-inline {
+      flex-flow: nowrap;
+    }
+
+    input {
+      margin-right: 10px;
+    }
+
+    .results {
+      width: 100%;
+    }
+
+    .results2 {
+      width: 100%;
+    }
+
+    .results__list {
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      margin: 30px;
+      flex-wrap: wrap;
+    }
+
+    .results__link {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 0 10px;
+    }
+
+    .results__link img {
+      display: none;
+    }
+
+    .card-body {
+      padding: 10px;
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .recipe {
+      width: 100%;
+      margin: 0;
+      padding: 10px;
+    }
+  }
+
+  @media(max-width: 800px) {
+    
+  }
